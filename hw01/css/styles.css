@@ -1,0 +1,140 @@
+/* Global styles
+
+Color pallete = cocktail brights
+
+pale: #e5dfd6
+pastel green: #bcffa0
+bold yellow: #f2ce1a
+bright pink: #d41b9f
+turquoise: #54d9c6
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+.background {
+  backround-color: #e5dfd6
+}
+h1 {font-family: 'Paytone', sans-serif;
+font-size: 3em;
+line-height: 40%;
+}
+
+h2 {font-family: 'Paytone', sans-serif;
+font-size: 2em;
+text-align: center;
+line-height: 40%;
+}
+
+h3 {font-family: 'Roboto', sans-serif;
+font-weight: 450;
+}
+
+p, ul {font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+
+a {font-family: 'Roboto', sans-serif;
+font-weight: 150;
+color: black;
+}
+
+.italicize {
+  font-style:italic;
+}
+/* Intro
+------------------------------------*/
+.intro {
+  background-color: #d41b9f;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 15px;
+  text-align: center;
+
+}
+
+a.class {
+  color: white
+
+}
+/* Projects
+------------------------------------*/
+.allprojects {
+  background: #bcffa0;
+  margin-top: 0;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 15px;
+
+
+}
+
+
+/* Work
+------------------------------------*/
+.allwork {
+  background: #f2ce1a;
+  margin-top: 0;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 15px;
+  width: 100%
+  line-height: 70%
+
+
+}
+
+.squish {
+  line-height: 60%
+
+}
+.fix {
+  line-height: 100%
+}
+ul {
+    list-style: none;
+    line-height: 130%
+}
+
+ul li:before {
+    content: '◌ ';
+}
+
+/* Education
+------------------------------------*/
+.alleducation {
+  background: #54d9c6;
+  margin-top: 0;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 15px;
+  line-height: 10px;
+
+
+
+
+}
+
+/* Contact info
+------------------------------------*/
+.allcontact {
+  background: #d41b9f;
+  margin-top: 0;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 15px;
+  text-align: center;
+
+
+
+}
