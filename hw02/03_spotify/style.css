@@ -1,0 +1,313 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+a, a:hover, a:visited, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* Layout */
+/**********/
+aside, footer, header, nav, section, article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+    grid-template-areas:
+       "left main"
+       "bottom bottom";
+    height: 100vh;
+}
+
+/* primariy use flexbox proporties and box model */
+
+aside {
+    background-color: #000;
+    grid-area: left;
+}
+
+aside a:hover {
+  color: white;
+}
+}
+#sidebar i {
+  margin-right: 15px;
+  color: #E8E8E8;
+}
+
+#spotify_aside i {
+  margin: 0px;
+  color: #E8E8E8
+}
+#spotify_aside {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  color: #E8E8E8;
+}
+
+#home_aside {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  color: #E8E8E8;
+}
+
+#home_aside:hover {
+    color: white;
+}
+
+#search_aside {
+  padding-left: 40px;
+  padding-bottom: 15px;
+  color: #E8E8E8;
+}
+#search_aside:hover {
+  color: white;
+}
+
+#library_aside {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-left: 3px solid #1DB954;
+  margin-left: 25px;
+  color: #E8E8E8;
+}
+
+#library_aside:hover {
+  color: white;
+}
+
+header {
+    background: #111;
+    position: absolute;
+    width: calc(100vw - 250px);
+    left: 250px;
+    text-transform: uppercase;
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+header a {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: grey;
+}
+
+#upgrade {
+  margin-right: 25px;
+}
+
+#profile {
+  font-weight: bold;
+  border: none;
+  background-color: #222;
+}
+
+#profile:hover {
+    background-color: grey;
+}
+
+nav {
+    margin-top: 55px;
+    text-transform: uppercase;
+    background-color: #111;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    font-size: 12px;
+    padding: 20px;
+    position: fixed;
+    display: inline-block;
+    right: 0px;
+    left: 250px;
+    letter-spacing: 1px;
+}
+
+nav {
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+}
+
+nav a {
+  margin-right: 25px;
+  font-weight: bold;
+}
+nav a:hover {
+  border-bottom: 3px solid #1DB954;
+}
+
+nav a: active {
+  border-bottom: 3px solid #1DB954;
+}
+
+nav a.selected {
+  border-bottom: 3px solid #1DB954;
+}
+
+main {
+    background: #111;
+    grid-area: main;
+    min-height: 350px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 3;
+}
+
+img {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.artist-card {
+  background-color: #222;
+  color: #E8E8E8;
+  border-radius: 10px;
+  align-items: center;
+  justify-items: center;
+  width: 18%;
+  padding: 10px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+#featured-content {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.play-button {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  opacity: 0;
+}
+
+.play-button {
+  border-radius: 50%;
+  background-color: #1DB954;
+  float: right;
+}
+
+.artist-card:hover .play-button {
+  opacity: 1;
+}
+
+footer {
+    background: #222;
+    grid-area: bottom;
+}
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .artist-card {
+    width: 31%;
+  }
+
+
+@media screen and (max-width: 700px) {
+  .artist-card {
+    width: 47%;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  header {
+    width: 100vw;
+    padding-right: 500px;
+    left: 350px;
+  }
+
+  nav {
+    width: 100vw;
+    left: 0px;
+  }
+
+  #upgrade{
+    display: none;
+  }
+
+  #profile {
+    display: flex;
+    padding-right: 100px;
+    padding-left: 15px;
+  }
+
+  #move {
+    padding-top: 2px;
+    margin-right: 5px;
+  }
+
+  body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+       "main"
+       "bottom";
+    height: 100vh;
+  }
+}
